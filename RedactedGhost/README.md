@@ -1,0 +1,4 @@
+make
+
+julia main.jl
+

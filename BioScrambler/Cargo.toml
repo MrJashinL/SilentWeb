@@ -1,0 +1,16 @@
+[package]
+name = "bioscrambler"
+version = "1.0.0"
+authors = ["Jashin L."]
+edition = "2021"
+
+[dependencies]
+rand = "0.8"
+clap = "3.0"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = 'abort'
+strip = true
